@@ -20,8 +20,6 @@ public class CommunicationMessage extends Message {
     private Long receiver;
     private String messageContent;
 
-    // 3、为什么需要在此处调用transmit type即最上层的type？？？
-    // 4. protocol只是将各种值初始化了而已，并没有其他实际的操作？有什么意义吗？？？
     public CommunicationMessage(MessageType messageType, CommunicationMessageType subType, Long sender, String messageContent) {
         super(messageType);
         this.subType = subType;
