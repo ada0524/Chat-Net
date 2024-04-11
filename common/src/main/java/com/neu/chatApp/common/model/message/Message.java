@@ -17,7 +17,6 @@ import java.util.Objects;
 @ToString
 public class Message implements Serializable {
 
-    // 1、序列化干啥的？？？
     private static final long serialVersionUID = 1234567L;
 
     protected MessageType messageType;
